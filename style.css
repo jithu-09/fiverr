@@ -1,0 +1,81 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: font-family: 'Roboto', sans-serif;
+}
+#header{
+	background: linear-gradient(to bottom right,#ccc9c0,#dedcd7);
+}
+a.btn-outline-dark:hover{
+	color: white !important;
+	background: green !important;
+}
+#header .nav-link{
+	color: white !important;
+}
+#header .hero-title{
+	font-weight: 500;
+}
+.catg{
+	overflow: hidden;
+	padding-bottom: 25px;
+	height: calc(auto + 30px);
+}
+.catg h3{
+	font-weight: 400;
+	font-size: 1.4rem;
+}
+.catg p{
+	opacity: 0;
+	padding-top: 30px;
+	transition: all .3s ease;
+}
+
+.catg h3::before{
+	content: '';
+	display: block;
+	margin: 5px auto 20px auto;
+	height: 2px;
+	width: 60px;
+	background-color: green;
+	transition: all .3s ease;
+}
+.catg:hover h3::before{
+	width: 180px;
+}
+.catg:hover p{
+	display: block;
+	opacity: 1;
+	padding-top: 10px;
+	color: #999;
+}
+#benefits h3{
+	font-weight: 300;
+}
+#guides h2{
+	font-weight: 700;
+}
+footer{
+	bottom: 0;
+	background-color: rgba(182,224,227,0.4);
+}
+footer .division{
+	width: calc(20%);
+}
+footer ul{
+	list-style-type: none;
+}
+footer ul a{
+	text-decoration: none;
+	color: grey;
+}
+footer ul a:hover{
+	color: black;
+}
+#testimonials{
+	width: 100%;
+	background-color: #e3ddcc;
+}
